@@ -16,3 +16,5 @@ export const remainingTime = (targetDate, currentDate) => {
     .diff(currentDate, 'seconds')
   return { remainingDays, remainingHours, remainingMinutes, remainingSeconds };
 }
+
+export const addPadding = value => value < 10 ? "0" + value : value;

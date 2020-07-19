@@ -9115,7 +9115,14 @@ mkdirp@^1.0.3, mkdirp@^1.0.4:
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
 
-moment@^2.27.0:
+moment-timezone@^0.5.23:
+  version "0.5.31"
+  resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.5.31.tgz#9c40d8c5026f0c7ab46eda3d63e49c155148de05"
+  integrity sha512-+GgHNg8xRhMXfEbv81iDtrVeTcWt0kWmTEY1XQK14dICTXnWJnT0dxdlPspwqF3keKMVPXwayEsk1DI0AA/jdA==
+  dependencies:
+    moment ">= 2.9.0"
+
+"moment@>= 2.9.0", moment@^2.27.0:
   version "2.27.0"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.27.0.tgz#8bff4e3e26a236220dfe3e36de756b6ebaa0105d"
   integrity sha512-al0MUK7cpIcglMv3YF13qSgdAIqxHTO7brRtaz3DlSULbqfazqkc5kEjNrLDOM7fsjshoFIihnU8snrP7zUvhQ==
@@ -13415,6 +13422,19 @@ urql@^1.9.8:
   dependencies:
     "@urql/core" "^1.12.0"
     wonka "^4.0.14"
+
+use-clock@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/use-clock/-/use-clock-1.1.0.tgz#5a4bcc0c3e8037927399542f88c473f8864705d3"
+  integrity sha512-saJ+oOBUh1UmeLLI2k8/pEcm80f1wVpJU3oVECPKXlmLIC83rDrhWTaghjXi7QLbQYOsmo1W6GZh/tJA2Fr9Iw==
+  dependencies:
+    moment-timezone "^0.5.23"
+    use-interval "^1.1.0"
+
+use-interval@^1.1.0:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/use-interval/-/use-interval-1.2.1.tgz#ec4aaa869888bcf491edcc1f001eb631db908597"
+  integrity sha512-qKe8IigaK0WmwwgWB6yLEmb7olb0rY31+anvMk0QMO+UEHeHG3ABucuXMrjqc8F0NsTLHNFVL8BNo20x50FRwA==
 
 use@^3.1.0:
   version "3.1.1"

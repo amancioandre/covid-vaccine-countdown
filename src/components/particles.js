@@ -24,7 +24,7 @@ const Particles = () => (
             },
             "particles": {
               "number": {
-                "value": 100,
+                "value": 40,
                 "density": {
                   "enable": true,
                   "value_area": 800
@@ -36,8 +36,8 @@ const Particles = () => (
               "shape": {
                 "type": "circle",
                 "stroke": {
-                  "width": 2,
-                  "color": "#FFF",
+                  "width": 0,
+                  "color": "#000",
                   "opacity": 0.3
                 },
                 "polygon": {
@@ -48,7 +48,7 @@ const Particles = () => (
                 "value": 0.5,
                 "random": true,
                 "anim": {
-                  "enable": false,
+                  "enable": true,
                   "speed": 1,
                   "opacity_min": 0.1,
                   "sync": false

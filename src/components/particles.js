@@ -7,9 +7,21 @@ const Particles = () => (
         style={{
             position: "absolute",
             top: 0,
-            pointerEvents: "none"
+            // pointerEvents: "onHover"
         }}
         params={{
+            "interactivity": {
+                "events": {
+                    "onHover": {
+                        "enable": true,
+                        "mode": "attract"
+                    },
+                    "onClick": {
+                        "enable": true,
+                        "mode": "pull"
+                    },
+                },
+            },
             "particles": {
               "number": {
                 "value": 100,
@@ -19,13 +31,14 @@ const Particles = () => (
                 }
               },
               "color": {
-                "value": "#fff"
+                "value": "#000"
               },
               "shape": {
                 "type": "circle",
                 "stroke": {
-                  "width": 0,
-                  "color": "#000000"
+                  "width": 2,
+                  "color": "#FFF",
+                  "opacity": 0.3
                 },
                 "polygon": {
                   "nb_sides": 3
@@ -62,12 +75,12 @@ const Particles = () => (
                 "enable": true,
                 "speed": 6,
                 "direction": "none",
-                "random": false,
+                "random": true,
                 "straight": false,
                 "out_mode": "out",
                 "bounce": false,
                 "attract": {
-                  "enable": false,
+                  "enable": true,
                   "rotateX": 600,
                   "rotateY": 1200
                 }
